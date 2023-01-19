@@ -2,7 +2,7 @@
 
 [![platform](https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter)](https://flutter.dev)
 [![platform](https://img.shields.io/badge/Platform-Dart-02569B?logo=dart)](https://dart.dev)
-[![pub package](https://img.shields.io/pub/v/enum_plus.svg?label=enum_plus&color=02569B)](https://pub.dev/packages/pipeline_plus)
+[![pub package](https://img.shields.io/pub/v/enum_plus.svg?label=enum_plus&color=02569B)](https://pub.dev/packages/enum_plus)
 [![license](https://img.shields.io/github/license/aydinfatih/enum_plus?color=02569B)](https://opensource.org/licenses/BSD-3-Clause)
 
 Simple, extensible and powerful enumeration implementation
