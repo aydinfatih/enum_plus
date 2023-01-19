@@ -1,6 +1,6 @@
 name: enum_plus
 description: Simple, extensible and powerful enumeration implementation
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/aydinfatih/enum_plus
 repository: https://github.com/aydinfatih/enum_plus
 
