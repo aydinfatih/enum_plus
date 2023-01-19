@@ -32,7 +32,10 @@ mixin EnumPlus implements Enum {
 
   /// Transform the name into a friendly, formatted version.
   String getFriendlyName() {
-    return name.split(RegExp(r'(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|(_)|(?=[0-9])')).map((word) {
+    return name
+        .split(RegExp(
+            r'(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|(_)|(?=[0-9])'))
+        .map((word) {
       var tempWord = word.toLowerCase();
       return tempWord.replaceFirst(tempWord[0], tempWord[0].toUpperCase());
     }).join(' ');
@@ -175,7 +178,8 @@ extension EnumPlusListExtension<T extends EnumPlus> on Iterable<T> {
       return fromValue(enumNameOrValue);
     }
 
-    if (hasName(enumNameOrValue.toString()) && enumNameOrValue.runtimeType == String) {
+    if (hasName(enumNameOrValue.toString()) &&
+        enumNameOrValue.runtimeType == String) {
       return fromName(enumNameOrValue);
     }
 

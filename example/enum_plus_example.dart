@@ -39,7 +39,8 @@ void main() {
   print(Animal.values.getNamesExcept([0, Animal.HONEY_BEE])); // [CAT]
 
   print(Animal.values.getFriendlyNames()); // [Dog, Cat, Honey Bee]
-  print(Animal.values.getFriendlyNames(values: [0, Animal.HONEY_BEE])); // [Dog, Honey Bee]
+  print(Animal.values
+      .getFriendlyNames(values: [0, Animal.HONEY_BEE])); // [Dog, Honey Bee]
   print(Animal.values.getFriendlyNamesExcept([Animal.DOG, 1])); // [Honey Bee]
 
   print(Animal.values.fromName('DOG')); // Animal.DOG
@@ -56,8 +57,10 @@ void main() {
 
   print(Animal.values.fromNames(['DOG', 'CAT'])); // [Animal.DOG, Animal.CAT]
   print(Animal.values.fromNames(['CAT', 'FISH'])); // Bad state: No element
-  print(Animal.values.fromFriendlyNames(['Honey Bee', 'Cat'])); // [Animal.HONEY_BEE, Animal.CAT]
-  print(Animal.values.fromFriendlyNames(['Honey Bee', 'Fish'])); // Bad state: No element
+  print(Animal.values.fromFriendlyNames(
+      ['Honey Bee', 'Cat'])); // [Animal.HONEY_BEE, Animal.CAT]
+  print(Animal.values
+      .fromFriendlyNames(['Honey Bee', 'Fish'])); // Bad state: No element
 
   print(Animal.values.hasValue(1)); // true
   print(Animal.values.hasValue(Animal.CAT)); // true
